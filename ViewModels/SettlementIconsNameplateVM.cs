@@ -10,7 +10,7 @@ namespace SettlementIcons.ViewModels
 {
 	public class SettlementIconsNameplateVM : SettlementNameplateVM
 	{
-		public SettlementIconsNameplateVM(Settlement settlement, GameEntity entity, Camera mapCamera, Action<Vec2, float> setCameraPosition) : base(settlement, entity, mapCamera, setCameraPosition)
+		public SettlementIconsNameplateVM(Settlement settlement, GameEntity entity, Camera mapCamera, Action<Vec2> setCameraPosition) : base(settlement, entity, mapCamera, setCameraPosition)
 		{
 			bool flag = !base.Settlement.IsHideout();
 			if (flag)

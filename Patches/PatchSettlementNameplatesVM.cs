@@ -9,7 +9,7 @@ namespace SettlementIcons.Patches
 	[HarmonyPatch(typeof(SettlementNameplatesVM), MethodType.Constructor, new Type[]
 	{
 		typeof(Camera),
-		typeof(Action<Vec2, float>)
+		typeof(Action<Vec2>)
 	})]
 	public class PatchSettlementNameplatesVM
 	{

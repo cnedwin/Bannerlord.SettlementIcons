@@ -19,7 +19,7 @@ namespace SettlementIcons
 					Traverse traverse = Traverse.Create(item);
 					GameEntity value = traverse.Field<GameEntity>("_entity").Value;
 					Camera value2 = traverse.Field<Camera>("_mapCamera").Value;
-					Action<Vec2, float> value3 = traverse.Field<Action<Vec2, float>>("_fastMoveCameraToPosition").Value;
+					Action<Vec2> value3 = traverse.Field<Action<Vec2>>("_fastMoveCameraToPosition").Value;
 					SettlementIconsNameplateVM item2 = new SettlementIconsNameplateVM(item.Settlement, value, value2, value3);
 					base.InsertItem(index, item2);
 				}
